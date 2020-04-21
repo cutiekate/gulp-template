@@ -34,10 +34,14 @@ function check() {
     if (cells[arr[i][0]].innerHTML === 'X' && cells[arr[i][1]].innerHTML === 'X'
      && cells[arr[i][2]].innerHTML === 'X') {
       say('Победили хрестики!');
+
+      return;
     } else if (cells[arr[i][0]].innerHTML === 'O'
      && cells[arr[i][1]].innerHTML === 'O'
      && cells[arr[i][2]].innerHTML === 'O') {
       say('Победили нолики!');
+
+      return;
     }
   }
 
